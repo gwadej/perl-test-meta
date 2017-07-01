@@ -69,7 +69,7 @@ This document describes Test::Meta version 0.0.1
 =head1 SYNOPSIS
 
     use Test::Meta qw(
-        heavy:IO heavy:memory lint
+        heavy:io heavy:memory lint
     );
 
 =for author to fill in:

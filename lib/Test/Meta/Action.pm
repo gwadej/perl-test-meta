@@ -47,6 +47,9 @@ sub apply {
         plan skip_all => ($msg || 'All tests skipped' );
     }
     elsif ( $action eq 'todo' ) {
+        # I'm not sure how to do this one.
+        # We want the whole file to be as if it is in a block
+        # And marked with a TODO lable.
     }
     elsif ( $action eq 'die' ) {
         die ($msg || 'Fail the whole test file');
@@ -56,6 +59,8 @@ sub apply {
     }
     elsif ( $action eq 'meh' ) {
         # Sort of like todo
+        # Except we only want the todo behavior if the tests fail,
+        # otherwise, we'd like them to act as if they passed normally.
     }
     return;
 }
